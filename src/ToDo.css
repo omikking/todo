@@ -1,0 +1,117 @@
+/* General styles for the app */
+body {
+    background-color: #f0f8ff; /* Light blue background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Main container */
+  .todo-list {
+    width: 320px;
+    padding: 20px;
+    background-color: #ffffff; /* White background for the list container */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  /* Header */
+  .todo-list h1 {
+    margin-bottom: 20px;
+    color: #333333;
+  }
+  
+  /* Task input container */
+  .task-input {
+    margin-bottom: 20px;
+  }
+  
+  .task-input input {
+    padding: 10px;
+    width: 200px;
+    margin-right: 10px;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s;
+  }
+  
+  .task-input input:focus {
+    border-color: #007bff;
+  }
+  
+  .task-input button {
+    padding: 10px 20px;
+    margin-left: 10px; /* Add margin to create space between the input and button */
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .task-input button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Task filter container */
+  .task-filter {
+    margin-bottom: 20px;
+  }
+  
+  .task-filter select {
+    padding: 10px;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s;
+  }
+  
+  .task-filter select:focus {
+    border-color: #007bff;
+  }
+  
+  .btn {
+    margin-top: 5%;
+    align-items: center;
+  }
+  
+  /* Task list container */
+  .task-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .task-list li {
+    padding: 10px;
+    margin: 5px 0;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s;
+  }
+  
+  .task-list li:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .task-list li.completed span {
+    text-decoration: line-through;
+    color: #aaaaaa;
+  }
+  
+  .task-list button {
+    background: none;
+    border: none;
+    color: red;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
